@@ -19,7 +19,7 @@ nav {
   }
   .menu > li {
     float: left;
-    color: #76b3df;
+    color: #1d5ccf;
     width: 140px;
     height: 40px;
     line-height: 40px;
@@ -29,7 +29,7 @@ nav {
     list-style-type: none;
   }
   a:hover {
-    color: #76b3df
+    color: white
 }
   .sub-menu {
     transform: scale(0);
@@ -64,4 +64,17 @@ nav {
     height: 150px;
     margin-left: 150px;
     border-radius: 20px;
+  }
+  .img-fluid{
+    width: 400px;
+    height: 450px;
+  }
+  .img-fluide{
+    width: 130px;
+    height: 130px;
+    border-radius: 80px;
+  }
+  .img-fluides{
+    width: 350px;
+    height: 350px;
   }
