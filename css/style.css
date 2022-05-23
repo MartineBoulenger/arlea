@@ -1,9 +1,7 @@
 nav {
     text-align: center;
   }
-  img.img-nav{
-    border-radius: 70px;
-  }
+
   .menu {
   
     display: flex;
@@ -69,11 +67,7 @@ nav {
     width: 400px;
     height: 450px;
   }
-  .img-fluide{
-    width: 130px;
-    height: 130px;
-    border-radius: 80px;
-  }
+
   .img-fluides{
     width: 350px;
     height: 350px;

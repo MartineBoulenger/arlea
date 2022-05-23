@@ -42,7 +42,7 @@ https://templatemo.com/tm-556-catalog-z
                         <a class="nav-link nav-link-3 active" aria-current="page" href="index.html">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-1" href="#">Femmes</a>
+                        <a class="nav-link nav-link-1" href="#">Femme</a>
                         <ul class="sub-menu">
                             <li>
                                 <a href="hautfemmes.html">Les hauts</a></li>
@@ -51,7 +51,7 @@ https://templatemo.com/tm-556-catalog-z
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-1" href="#">Hommes</a>
+                        <a class="nav-link nav-link-1" href="#">Homme</a>
                         <ul class="sub-menu">
                         <li>
                             <a href="hauthommes.html">Les hauts</a></li>
@@ -60,7 +60,7 @@ https://templatemo.com/tm-556-catalog-z
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-1" href="#">Enfants</a>
+                        <a class="nav-link nav-link-1" href="#">Enfant</a>
                         <ul class="sub-menu">
                             <li>
                             <a href="hautenfants.html">Les hauts</a></li>
@@ -107,29 +107,22 @@ https://templatemo.com/tm-556-catalog-z
 
 
                 <form id="contact-form" action="" method="POST" class="tm-contact-form mx-auto">
-                    <div class="form-group">
-                        <input type="text" name="name" class="form-control rounded-0" placeholder="Nom" required />
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" class="form-control rounded-0" placeholder="Email" required />
-                    </div>
-                    <div class="form-group">
-                        <select class="form-control" id="contact-select" name="inquiry">
-                            <option value="-">Sujet</option>
-                            <option value="sales">Plus d'informations</option>
-                            <option value="creative">Passer commande</option>
+                <div class="form-group">
+                  <label for="mail">Adresse email</label>
+                  <input type="text" class="form-control" name="mail" id="mail" placeholder="nom@domain.com" value="<?php echo $_POST['mail']; ?>">
+              </div>
+              <div class="form-group">
+                  <label for="name">Votre nom</label>
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Nom" value="<?php echo $_POST['name']; ?>">
+              </div>
+              <div class="form-group">
+                  <label for="message">Votre message</label>
+                  <textarea name="message" id="message" class="form-control" placeholder="Saisissez votre message" rows="3"><?php echo $_POST['message']; ?></textarea>
+              </div>
 
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <textarea rows="8" name="message" class="form-control rounded-0" placeholder="Message" required=></textarea>
-                    </div>
-
-                    <div class="form-group tm-text-right">
-                        <button type="submit" class="btn btn-primary">Envoyer</button>
-                    </div>
-                </form>                
+              <input type="submit" value="Envoyer" class="btn btn-primary">
+          </fieldset>
+      </form>
             </div>
             <div class="col-lg-4 col-12 mb-5">
                 <div class="tm-address-col">
@@ -165,8 +158,8 @@ https://templatemo.com/tm-556-catalog-z
                 <!-- Map -->
                 <div class="mapouter mb-4">
                     <div class="gmap-canvas">
-                        <iframe width="100%" height="520" id="gmap-canvas"
-                            src=<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2835.8850520385586!2d-1.0359500841395002!3d44.701545692025796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54bd641403b9fb%3A0xcf75a40f4fcdcb82!2s8%20Av.%20de%20la%20Lib%C3%A9ration%2C%2033138%20Lanton!5e0!3m2!1sfr!2sfr!4v1651645413012!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+                    <iframe width="100%" height="520" id="gmap-canvas"
+                            src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2835.8850520385586!2d-1.0359500841395002!3d44.701545692025796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54bd641403b9fb%3A0xcf75a40f4fcdcb82!2s8%20Av.%20de%20la%20Lib%C3%A9ration%2C%2033138%20Lanton!5e0!3m2!1sfr!2sfr!4v1651645413012!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
                             frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     </div>
                 </div>               
@@ -178,17 +171,16 @@ https://templatemo.com/tm-556-catalog-z
         <div class="container-fluid tm-container-small">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
-                    <h3 class="tm-text-primary mb-4 tm-footer-title">Pour passer commande en ligne</h3>
-                    <p>Arlea <a rel="sponsored" href="https://www.arlea-vetements.fr/">Boutique en ligne</a> Créé  au printemps 2020. Arlea
+                    <h3 class="tm-text-primary mb-4 tm-footer-title">En savoir plus</h3>
+                    <p>Arlea  Créé  au printemps 2020. Arlea
                         
                         est désormais en contact régulier avec des professionnels de la santé, avec le secteur socio médical, ainsi que tous les autres professionnels qui souhaitent une tenue adaptée à leurs besoins.</p>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
                     <h3 class="tm-text-primary mb-4 tm-footer-title">Liens utiles</h3>
                     <ul class="tm-footer-links pl-0">
-                        <li><a href="https://www.arlea-vetements.fr/">La boutique en ligne</a></li>
                         <li><a href="mentionslegales.html">Mentions légales</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.php">Contact</a></li>
                         <li><a href="https://creationwebdesignboulenger.com">Contacter le webmaster</a></li>
 
                     </ul>
